@@ -3,12 +3,12 @@ import 'firebase/auth';
 import 'firebase/firestore';
 
 var firebaseConfig = {
-	apiKey: 'AIzaSyD0IS9s7iudI0Bh-pJ_7VMgsuMIiGnZ5sw',
-	authDomain: 'vue-chat-55b36.firebaseapp.com',
-	projectId: 'vue-chat-55b36',
-	storageBucket: 'vue-chat-55b36.appspot.com',
-	messagingSenderId: '954514542884',
-	appId: '1:954514542884:web:936c6b131db85133c3a3b1'
+	apiKey: process.env.apiKey,
+	authDomain: process.env.authDomain,
+	projectId: process.env.projectId,
+	storageBucket: process.env.storageBucket,
+	messagingSenderId: process.env.messagingSenderId,
+	appId: process.env.appId
 };
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
